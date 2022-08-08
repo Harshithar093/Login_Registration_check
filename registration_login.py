@@ -11,6 +11,7 @@ import re
 
 
 def register():
+  print("Registartion form...")
   with open("registration.csv",mode="a",newline='') as f:
     writer=csv.writer(f,delimiter=",")
     writer.writerow(["email","password"])
@@ -31,6 +32,7 @@ def register():
 register()
 
 def login():
+  print("Login here.... ")
   f= open("registration.csv","r")
   Found=0
   email=input("Enter email : ")
